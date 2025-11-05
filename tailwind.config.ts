@@ -11,6 +11,10 @@ export default {
         sm: ".1875rem", /* 3px */
       },
       colors: {
+        // Cérebro em Jogo brand colors
+        'cerebro-blue': '#009FE3',
+        'cerebro-yellow': '#FFD600',
+        'cerebro-green': '#00B050',
         // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
