@@ -1,0 +1,36 @@
+Crie uma página web completa em HTML e CSS (sem frameworks) inspirada exatamente no design da imagem que estou enviando.
+
+🧩 Estrutura geral:
+- Cabeçalho com o logotipo “Cérebro em Jogo” e o slogan colorido.
+- Seção introdutória com título chamativo e descrição curta.
+- Seção “O que você vai encontrar” com três cartões lado a lado contendo:
+  1. Imagem à esquerda e texto à direita.
+  2. Ícone e título “+2.000 atividades”.
+  3. Textos descritivos com pequenos ícones.
+- Bloco de destaque com fundo azul e texto branco contendo a lista de benefícios com emojis de check (✅).
+- Seção central com uma imagem do celular mostrando o conteúdo, acompanhada de uma lista dos benefícios (melhora da atenção, raciocínio lógico, etc).
+- Bloco amarelo com botão verde “Receber agora”.
+- Seção “Como vou receber meu material?” com imagens ilustrativas.
+- Três cartões de bônus (livro de colorir, 50 atividades, guia do autismo), com títulos, descrições e preços riscados.
+- Seção final de planos (“Pack Básico” e “Super Pack”) mostrando preços e lista de conteúdos.
+- Rodapé com seção de “Perguntas Frequentes” (FAQ), cada pergunta em um retângulo branco com bordas arredondadas e sombra leve.
+
+🎨 Estilo visual:
+- Utilize cores predominantes: azul (#009FE3), amarelo (#FFD600), verde (#00B050) e branco.
+- Fontes arredondadas e amigáveis (ex: “Poppins” ou “Nunito”).
+- Cantos arredondados (border-radius: 15px) e sombras suaves (box-shadow).
+- Ícones de check e emojis podem ser usados como texto (✅ 💡 🎨 etc).
+- A página deve ser responsiva, centralizada e com margens adequadas.
+- Botões grandes, com transição hover (ex: cor mais escura ao passar o mouse).
+
+💡 Extras:
+- Crie uma hierarquia visual equilibrada (títulos grandes, subtítulos médios, corpo pequeno).
+- Centralize os botões de ação.
+- Use seções separadas com espaçamento (padding generoso).
+- Não use imagens externas além das necessárias (coloque espaços reservados com <img> de exemplo).
+
+📱 Responsividade:
+- Nos celulares, empilhe as seções em coluna.
+- Certifique-se de que os textos e botões permaneçam legíveis e ajustados.
+
+O resultado deve ser uma página HTML + CSS moderna, limpa e fiel à imagem enviada.
