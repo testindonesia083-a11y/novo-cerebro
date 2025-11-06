@@ -33,7 +33,7 @@ export default function PricingPlans() {
   };
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section id="pricing-section" className="py-16 px-4 bg-white scroll-mt-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4" data-testid="text-pricing-title">
           Escolha seu plano

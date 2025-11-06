@@ -1,17 +1,12 @@
 export default function Header() {
   return (
-    <header className="bg-white py-6 px-4 shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex flex-col">
-          <h1 className="text-2xl md:text-3xl font-bold text-foreground" data-testid="text-logo">
-            Cérebro em Jogo
-          </h1>
-          <p className="text-sm md:text-base mt-1">
-            <span className="text-cerebro-blue font-semibold">Aprender</span>{" "}
-            <span className="text-cerebro-yellow font-semibold">brincando</span>{" "}
-            <span className="text-cerebro-green font-semibold">é mais divertido!</span>
-          </p>
-        </div>
+    <header className="bg-white py-8 px-4">
+      <div className="max-w-7xl mx-auto text-center">
+        <h1 className="text-3xl md:text-5xl font-bold" data-testid="text-logo">
+          <span className="text-cerebro-yellow">Cére</span>
+          <span className="text-cerebro-blue">bro em </span>
+          <span className="text-orange-500">Jogo</span>
+        </h1>
       </div>
     </header>
   );
