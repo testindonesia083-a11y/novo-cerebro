@@ -1,6 +1,6 @@
 import { Star } from 'lucide-react';
 import mariaSantosImg from '@assets/stock_images/professional_woman_s_ad2dbd7b.jpg';
-import anaPaulaCostaImg from '@assets/stock_images/professional_female__79fe13c5.jpg';
+import anaPaulaCostaImg from '@assets/image_1762392156628.png';
 import carlosAlmeidaImg from '@assets/stock_images/professional_man_smi_2aba5f94.jpg';
 
 export default function Testimonials() {
