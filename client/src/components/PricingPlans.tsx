@@ -8,16 +8,15 @@ export default function PricingPlans() {
       features: [
         'Acesso a 170 atividades',
         'Acesso Imediato',
-        'Atualizações por 6 meses'
+        'Garantia de 7 dias'
       ],
       highlighted: false
     },
     {
       name: 'Super Pack',
-      price: 'R$ 97',
+      price: 'R$ 27',
       features: [
-        'Acesso a todas as 2.000+ atividades',
-        'Todos os 3 bônus incluídos',
+        'Acesso a +170 atividades',
         'Suporte prioritário',
         'Atualizações vitalícias',
         'Novos materiais mensais',
@@ -32,7 +31,7 @@ export default function PricingPlans() {
   };
 
   return (
-    <section id="pricing-section" className="py-16 px-4 bg-white scroll-mt-4">
+    <section id="pricing-section" className="py-8 px-4 bg-white scroll-mt-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4" data-testid="text-pricing-title">
           Escolha seu plano
@@ -55,7 +54,7 @@ export default function PricingPlans() {
               {plan.highlighted && (
                 <div className="text-center mb-4">
                   <span className="bg-cerebro-yellow text-foreground px-4 py-1 rounded-full text-sm font-bold">
-                    MAIS POPULAR
+                    MAIS VENDIDO
                   </span>
                 </div>
               )}
