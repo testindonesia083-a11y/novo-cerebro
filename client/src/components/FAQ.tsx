@@ -11,7 +11,7 @@ export default function FAQ() {
     },
     {
       question: 'Para qual idade é recomendado?',
-      answer: 'Nosso material é adequado para crianças de 2 a 10 anos, com atividades organizadas por faixa etária e nível de desenvolvimento.'
+      answer: 'Nosso material é adequado para crianças, com atividades organizadas por faixa etária e nível de desenvolvimento.'
     },
     {
       question: 'Posso imprimir quantas vezes quiser?',

@@ -7,13 +7,18 @@ export default function FeaturesSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-cerebro-green mb-12" data-testid="text-features-title">
           Um Material Completo Didático e Prático
         </h2>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-8">
           <img 
             src={activitiesImage} 
             alt="Material Completo de Atividades" 
             className="max-w-2xl w-full h-auto rounded-[15px] shadow-lg"
             data-testid="img-activities-preview"
           />
+        </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+            Você terá o acesso imediato a <span className="font-bold text-cerebro-green">170 atividades</span> testadas e aprovadas, perfeitas para o seu filho ou aluno que está com dificuldade ou para o aprendizado e alfabetização.
+          </p>
         </div>
       </div>
     </section>

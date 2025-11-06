@@ -1,9 +1,9 @@
 export default function BlueHighlight() {
   const benefits = [
     'Materiais testados e aprovados por educadores',
-    'Atividades para todas as idades (2 a 10 anos)',
+    'Atividades para todas as idades',
     'Fácil de usar - basta imprimir',
-    'Acesso imediato após a compra',
+    'Acesso 100% digital, imediato após a compra',
     'Garantia de 7 dias - satisfação total',
     'Suporte dedicado para dúvidas'
   ];

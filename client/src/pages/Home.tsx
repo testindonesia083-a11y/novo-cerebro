@@ -3,6 +3,9 @@ import Hero from '@/components/Hero';
 import FeaturesSection from '@/components/FeaturesSection';
 import BlueHighlight from '@/components/BlueHighlight';
 import BenefitsWithPhone from '@/components/BenefitsWithPhone';
+import Testimonials from '@/components/Testimonials';
+import Stats from '@/components/Stats';
+import Guarantee from '@/components/Guarantee';
 import PricingPlans from '@/components/PricingPlans';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -15,6 +18,9 @@ export default function Home() {
       <FeaturesSection />
       <BlueHighlight />
       <BenefitsWithPhone />
+      <Testimonials />
+      <Stats />
+      <Guarantee />
       <PricingPlans />
       <FAQ />
       <Footer />
