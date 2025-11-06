@@ -3,8 +3,8 @@ import { Brain, Lightbulb, Puzzle, Smile } from 'lucide-react';
 export default function BenefitsWithPhone() {
   const benefits = [
     { icon: Brain, text: 'Melhora da atenção e concentração' },
-    { icon: Puzzle, text: 'Desenvolvimento do raciocínio lógico' },
-    { icon: Lightbulb, text: 'Estímulo à criatividade' },
+    { icon: Puzzle, text: 'Melhora o desempenho escolar, com atividades alinhadas às habilidades da educação infantil e anos iniciais.' },
+    { icon: Lightbulb, text: 'Ideal para crianças com diferentes perfis de aprendizado, inclusive com TDAH ou autismo leve.' },
     { icon: Smile, text: 'Aprendizado divertido e prazeroso' }
   ];
 
@@ -13,7 +13,7 @@ export default function BenefitsWithPhone() {
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center" data-testid="text-benefits-phone-title">
-            Benefícios comprovados
+            Benefícios Comprovados do Cérebro em Jogo
           </h2>
           
           <div className="space-y-6">
