@@ -11,6 +11,7 @@ export default function PricingPlans() {
         'Garantia de 7 dias'
       ],
       bonuses: [],
+      checkoutUrl: 'https://checkout.cerebroemjogo.shop/VCCL1O8SCD0C',
       highlighted: false
     },
     {
@@ -28,13 +29,10 @@ export default function PricingPlans() {
         'Bônus 2: Guia para Crianças Autistas',
         'Bônus 3: 100 Ideias de Brincadeiras para Tirar os Filhos do Celular'
       ],
+      checkoutUrl: 'https://checkout.cerebroemjogo.shop/VCCL1O8SCD47',
       highlighted: true
     }
   ];
-
-  const handleSelectPlan = (planName: string) => {
-    console.log(`${planName} selected`);
-  };
 
   return (
     <section id="pricing-section" className="py-8 px-4 bg-white scroll-mt-4">
@@ -103,9 +101,11 @@ export default function PricingPlans() {
               
               {plan.bonuses.length === 0 && <div className="mb-8" />}
               
-              <button
-                onClick={() => handleSelectPlan(plan.name)}
-                className={`w-full py-4 rounded-full font-bold text-lg transition-all duration-300 ${
+              <a
+                href={plan.checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block text-center w-full py-4 rounded-full font-bold text-lg transition-all duration-300 ${
                   plan.highlighted
                     ? 'bg-cerebro-yellow text-foreground hover:bg-cerebro-yellow/90'
                     : 'bg-cerebro-green text-white hover:bg-cerebro-green/90'
@@ -113,7 +113,7 @@ export default function PricingPlans() {
                 data-testid={`button-select-plan-${index}`}
               >
                 Escolher {plan.name}
-              </button>
+              </a>
             </div>
           ))}
         </div>
