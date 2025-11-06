@@ -4,7 +4,7 @@ export default function Stats() {
   const stats = [
     {
       icon: Users,
-      value: '15.000+',
+      value: '1.500+',
       label: 'Pessoas Ativas',
       color: 'text-cerebro-blue'
     },

@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { Check, Gift } from 'lucide-react';
 
 export default function PricingPlans() {
   const plans = [
@@ -10,6 +10,7 @@ export default function PricingPlans() {
         'Acesso Imediato',
         'Garantia de 7 dias'
       ],
+      bonuses: [],
       highlighted: false
     },
     {
@@ -21,6 +22,11 @@ export default function PricingPlans() {
         'Atualizações vitalícias',
         'Novos materiais mensais',
         'Garantia estendida de 30 dias'
+      ],
+      bonuses: [
+        'Bônus 1: Livro de Colorir 200 Folhas',
+        'Bônus 2: Guia para Crianças Autistas',
+        'Bônus 3: 100 Ideias de Brincadeiras para Tirar os Filhos do Celular'
       ],
       highlighted: true
     }
@@ -71,7 +77,7 @@ export default function PricingPlans() {
                 </span>
               </div>
               
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <Check className={`w-5 h-5 shrink-0 mt-0.5 ${plan.highlighted ? 'text-cerebro-yellow' : 'text-cerebro-green'}`} />
@@ -81,6 +87,21 @@ export default function PricingPlans() {
                   </li>
                 ))}
               </ul>
+              
+              {plan.bonuses.length > 0 && (
+                <ul className="space-y-3 mb-8 border-t pt-4 border-white/20">
+                  {plan.bonuses.map((bonus, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Gift className={`w-5 h-5 shrink-0 mt-0.5 ${plan.highlighted ? 'text-cerebro-yellow' : 'text-cerebro-green'}`} />
+                      <span className={`${plan.highlighted ? 'text-white' : 'text-foreground'} font-medium`}>
+                        {bonus}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              
+              {plan.bonuses.length === 0 && <div className="mb-8" />}
               
               <button
                 onClick={() => handleSelectPlan(plan.name)}
