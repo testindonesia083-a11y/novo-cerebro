@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cérebro em Jogo - +170 Atividades Educativas para Crianças</title>
+  <meta name="description" content="Descubra 170 atividades criativas e educativas para estimular o desenvolvimento do seu filho. Material testado e aprovado por educadores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #2d3748;
+      background-color: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Colors */
+    :root {
+      --color-blue: #009FE3;
+      --color-yellow: #FFD84A;
+      --color-green: #6dd47e;
+      --color-orange: #ff7b4a;
+      --color-text: #2d3748;
+      --color-text-light: #718096;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to bottom, #ebf8ff, #e0f7fa);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-blue);
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .hero-image {
+      max-width: 800px;
+      width: 100%;
+      margin: 2rem auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .cta-button {
+      background-color: var(--color-blue);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1.25rem 3rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,159,227,0.3);
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,159,227,0.4);
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 1rem;
+      background: white;
+    }
+
+    .features h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: var(--color-green);
+      margin-bottom: 3rem;
+    }
+
+    .features-image {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto 2rem;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .features-text {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.25rem;
+      color: var(--color-text);
+    }
+
+    /* Blue Highlight Section */
+    .blue-highlight {
+      background-color: var(--color-blue);
+      padding: 4rem 1rem;
+    }
+
+    .blue-highlight h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: white;
+      margin-bottom: 2.5rem;
+    }
+
+    .benefits-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      color: white;
+      font-size: 1.125rem;
+    }
+
+    .benefit-item .checkmark {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    /* Benefits with Icons */
+    .benefits-icons {
+      padding: 4rem 1rem;
+      background: linear-gradient(to bottom, #f7fafc, white);
+    }
+
+    .benefits-icons h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: var(--color-text);
+      margin-bottom: 2.5rem;
+    }
+
+    .benefits-list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .benefit-icon-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .benefit-icon {
+      background-color: rgba(0,159,227,0.1);
+      border-radius: 50%;
+      padding: 0.75rem;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .benefit-icon svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-blue);
+    }
+
+    /* Pricing Plans */
+    .pricing {
+      padding: 2rem 1rem 4rem;
+      background: white;
+    }
+
+    .pricing h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+
+    .pricing-subtitle {
+      text-align: center;
+      color: var(--color-text-light);
+      font-size: 1.125rem;
+      margin-bottom: 3rem;
+    }
+
+    .pricing-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .pricing-card {
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: #f7fafc;
+    }
+
+    .pricing-card.highlighted {
+      background: var(--color-blue);
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0,159,227,0.3);
+    }
+
+    .pricing-badge {
+      background: var(--color-yellow);
+      color: var(--color-text);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card h3 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .pricing-price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-price span {
+      font-size: 1.125rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .pricing-features .icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 0.125rem;
+    }
+
+    .pricing-bonus {
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .pricing-card:not(.highlighted) .pricing-bonus {
+      border-top-color: rgba(0,0,0,0.1);
+    }
+
+    .pricing-button {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .pricing-card.highlighted .pricing-button {
+      background: var(--color-yellow);
+      color: var(--color-text);
+    }
+
+    .pricing-card:not(.highlighted) .pricing-button {
+      background: var(--color-green);
+      color: white;
+    }
+
+    .pricing-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 1rem;
+      background: linear-gradient(to bottom, white, #f7fafc);
+    }
+
+    .testimonials h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: var(--color-text);
+      margin-bottom: 3rem;
+    }
+
+    .testimonials-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .testimonial-role {
+      font-size: 0.875rem;
+      color: var(--color-text-light);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .star {
+      color: var(--color-yellow);
+      font-size: 1.25rem;
+    }
+
+    .testimonial-text {
+      color: var(--color-text-light);
+      font-style: italic;
+    }
+
+    /* Stats */
+    .stats {
+      padding: 4rem 1rem;
+      background: white;
+    }
+
+    .stats-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-item svg {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1rem;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--color-text-light);
+      font-size: 1rem;
+    }
+
+    /* Guarantee */
+    .guarantee {
+      padding: 4rem 1rem;
+      background: linear-gradient(to bottom, #f7fafc, white);
+    }
+
+    .guarantee-box {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      padding: 3rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      border: 2px solid var(--color-green);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .guarantee-icon {
+      background: rgba(109,212,126,0.1);
+      border-radius: 50%;
+      padding: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .guarantee-icon svg {
+      width: 80px;
+      height: 80px;
+      color: var(--color-green);
+    }
+
+    .guarantee-content h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+
+    .guarantee-content p {
+      color: var(--color-text-light);
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 4rem 1rem;
+      background: linear-gradient(to bottom, #f7fafc, white);
+    }
+
+    .faq h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: var(--color-text);
+      margin-bottom: 3rem;
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 1.5rem;
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      transition: background-color 0.2s ease;
+    }
+
+    .faq-question:hover {
+      background-color: rgba(0,0,0,0.02);
+    }
+
+    .faq-arrow {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+
+    .faq-answer-content {
+      padding: 0 1.5rem 1.5rem;
+      color: var(--color-text-light);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--color-text);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .footer-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-text {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Purchase Popup */
+    .popup-compra {
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      background: linear-gradient(135deg, #ff7b4a, #ffd84a, #6dd47e, #2596ff);
+      background-size: 300% 300%;
+      animation: gradientMove 6s ease infinite;
+      color: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 10px 16px;
+      font-size: 14px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 0.6s ease;
+      z-index: 9999;
+      max-width: 300px;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .popup-compra.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .popup-text {
+      line-height: 1.3;
+    }
+
+    .produto-basico {
+      color: #ffe88c;
+      font-weight: bold;
+    }
+
+    .produto-super {
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(0,0,0,0.2);
+    }
+
+    /* Utility Colors */
+    .text-blue { color: var(--color-blue); }
+    .text-yellow { color: var(--color-yellow); }
+    .text-green { color: var(--color-green); }
+    .text-orange { color: var(--color-orange); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+      
+      .hero p {
+        font-size: 1.125rem;
+      }
+
+      .cta-button {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+      }
+
+      .features h2,
+      .blue-highlight h2,
+      .benefits-icons h2,
+      .pricing h2,
+      .testimonials h2,
+      .faq h2 {
+        font-size: 2rem;
+      }
+
+      .guarantee-box {
+        padding: 2rem;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .guarantee-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .popup-compra {
+        top: 15px;
+        right: 10px;
+        font-size: 12px;
+        padding: 8px 10px;
+        max-width: 250px;
+      }
+
+      .pricing-card.highlighted {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Popup Container -->
+  <div id="popup-container"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Descubra 170 Atividades Criativas para o seu Filho!</h1>
+      
+      <p>
+        O <span class="text-yellow">Cérebro em Jogo</span> é um 
+        <span class="text-blue">kit digital</span> com mais de 
+        <span class="text-green"><strong>170 atividades</strong></span> 
+        lúdicas e inteligentes, para estimular o 
+        <span class="text-blue">foco</span>, 
+        <span class="text-yellow">memória</span>, 
+        <span class="text-orange">criatividade</span> e 
+        <span class="text-green">raciocínio</span> do seu filho de uma forma divertida com brincadeiras.
+      </p>
+      
+      <img src="attached_assets/image_1762387320798.png" alt="Cérebro em Jogo - +170 Atividades Infantis Educativas" class="hero-image">
+      
+      <a href="#pricing-section" class="cta-button">Quero Acessar Agora</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Um Material Didático Completo e Prático</h2>
+      <img src="attached_assets/0d2512b3-201e-4436-908d-6ecbbc8bd946_1762389388301.png" alt="Material Completo de Atividades" class="features-image">
+      <div class="features-text">
+        <p>
+          Você terá o acesso imediato a <strong class="text-green">170 atividades</strong> testadas e aprovadas, perfeitas para o seu filho ou aluno que está com dificuldade ou para o aprendizado e alfabetização.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blue Highlight Section -->
+  <section class="blue-highlight">
+    <div class="container">
+      <h2>Por que escolher nosso material?</h2>
+      
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <span class="checkmark">✅</span>
+          <p>Materiais testados e aprovados por educadores</p>
+        </div>
+        <div class="benefit-item">
+          <span class="checkmark">✅</span>
+          <p>Atividades para todas as idades</p>
+        </div>
+        <div class="benefit-item">
+          <span class="checkmark">✅</span>
+          <p>Fácil de usar - basta imprimir</p>
+        </div>
+        <div class="benefit-item">
+          <span class="checkmark">✅</span>
+          <p>Acesso 100% digital, imediato após a compra</p>
+        </div>
+        <div class="benefit-item">
+          <span class="checkmark">✅</span>
+          <p>Garantia de 7 dias - satisfação total</p>
+        </div>
+        <div class="benefit-item">
+          <span class="checkmark">✅</span>
+          <p>Suporte dedicado para dúvidas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits with Icons -->
+  <section class="benefits-icons">
+    <div class="container">
+      <h2>Benefícios Comprovados do Cérebro em Jogo</h2>
+      
+      <div class="benefits-list">
+        <div class="benefit-icon-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <p>Melhora da atenção e concentração</p>
+        </div>
+        <div class="benefit-icon-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+            </svg>
+          </div>
+          <p>Melhora o desempenho escolar, com atividades alinhadas às habilidades da educação infantil e anos iniciais.</p>
+        </div>
+        <div class="benefit-icon-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <p>Ideal para crianças com diferentes perfis de aprendizado, inclusive com TDAH ou autismo leve.</p>
+        </div>
+        <div class="benefit-icon-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <p>Aprendizado divertido e prazeroso</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing-section" class="pricing">
+    <div class="container">
+      <h2>Escolha seu plano</h2>
+      <p class="pricing-subtitle">Investimento único - sem mensalidades</p>
+      
+      <div class="pricing-grid">
+        <!-- Pack Básico -->
+        <div class="pricing-card">
+          <h3>Pack Básico</h3>
+          <div class="pricing-price">
+            R$ 10<span>/único</span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #6dd47e;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Acesso a 170 atividades</span>
+            </li>
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #6dd47e;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Acesso Imediato</span>
+            </li>
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #6dd47e;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Garantia de 7 dias</span>
+            </li>
+          </ul>
+          <a href="https://checkout.cerebroemjogo.shop/VCCL1O8SCD0C" target="_blank" class="pricing-button">Escolher Pack Básico</a>
+        </div>
+
+        <!-- Super Pack -->
+        <div class="pricing-card highlighted">
+          <div style="text-align: center;">
+            <span class="pricing-badge">MAIS VENDIDO</span>
+          </div>
+          <h3>Super Pack</h3>
+          <div class="pricing-price">
+            R$ 27<span>/único</span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Acesso a +170 atividades</span>
+            </li>
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Suporte prioritário</span>
+            </li>
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Atualizações vitalícias</span>
+            </li>
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Novos materiais mensais</span>
+            </li>
+            <li>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Garantia estendida de 30 dias</span>
+            </li>
+          </ul>
+          <div class="pricing-bonus">
+            <ul class="pricing-features">
+              <li>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                </svg>
+                <span>Bônus 1: Livro de Colorir 200 Folhas</span>
+              </li>
+              <li>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                </svg>
+                <span>Bônus 2: Guia para Crianças Autistas</span>
+              </li>
+              <li>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #FFD84A;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                </svg>
+                <span>Bônus 3: 100 Ideias de Brincadeiras para Tirar os Filhos do Celular</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://checkout.cerebroemjogo.shop/VCCL1O8SCD47" target="_blank" class="pricing-button">Escolher Super Pack</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>O que dizem os pais e educadores</h2>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="attached_assets/stock_images/professional_woman_s_ad2dbd7b.jpg" alt="Maria Santos" class="testimonial-avatar">
+            <div>
+              <p class="testimonial-name">Maria Santos</p>
+              <p class="testimonial-role">Mãe de 2 crianças</p>
+            </div>
+          </div>
+          <div class="testimonial-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "Meu filho de 5 anos adorou! As atividades são criativas e educativas. Vi uma melhora significativa na concentração dele em apenas 2 semanas."
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="attached_assets/image_1762392156628.png" alt="Ana Paula Costa" class="testimonial-avatar">
+            <div>
+              <p class="testimonial-name">Ana Paula Costa</p>
+              <p class="testimonial-role">Professora de Educação Infantil</p>
+            </div>
+          </div>
+          <div class="testimonial-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "Material excepcional! Uso em sala de aula e os alunos se divertem enquanto aprendem. Super recomendo para pais e educadores."
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="attached_assets/stock_images/professional_man_smi_2aba5f94.jpg" alt="Carlos Almeida" class="testimonial-avatar">
+            <div>
+              <p class="testimonial-name">Carlos Almeida</p>
+              <p class="testimonial-role">Pai e Pedagogo</p>
+            </div>
+          </div>
+          <div class="testimonial-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "Comprei para minha filha que tem TDAH e os resultados foram incríveis. As atividades são perfeitas para manter ela focada e engajada."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #009FE3;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <p class="stat-value">1.500+</p>
+          <p class="stat-label">Pessoas Ativas</p>
+        </div>
+
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #6dd47e;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          <p class="stat-value">97%</p>
+          <p class="stat-label">Recomendam</p>
+        </div>
+
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #FFD84A;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+          </svg>
+          <p class="stat-value">4.9/5</p>
+          <p class="stat-label">Avaliação Média</p>
+        </div>
+
+        <div class="stat-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #009FE3;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+          <p class="stat-value">200+</p>
+          <p class="stat-label">Escolas Usando</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="guarantee-box">
+        <div class="guarantee-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <div class="guarantee-content">
+          <h2>Garantia de Satisfação 100%</h2>
+          <p style="font-size: 1.125rem; font-weight: 600;">Experimente o Cérebro em Jogo por 7 dias sem risco!</p>
+          <p>Se por qualquer motivo você não gostar do material, devolvemos <strong style="color: #6dd47e;">100% do seu dinheiro</strong> na hora. Sem perguntas, sem complicações.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <h2>Perguntas Frequentes</h2>
+      
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Como funciona o acesso ao material?</span>
+            <svg class="faq-arrow" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content">Após a compra, você receberá um email com o link para download imediato. Todo o material está em formato PDF, pronto para imprimir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Para qual idade é recomendado?</span>
+            <svg class="faq-arrow" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content">Nosso material é adequado para crianças, com atividades organizadas por faixa etária e nível de desenvolvimento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso imprimir quantas vezes quiser?</span>
+            <svg class="faq-arrow" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content">Sim! Você pode imprimir todas as atividades quantas vezes precisar, para uso pessoal ou familiar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Tem garantia?</span>
+            <svg class="faq-arrow" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content">Sim, oferecemos garantia incondicional de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Recebo atualizações?</span>
+            <svg class="faq-arrow" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-content">Sim! Dependendo do plano escolhido, você receberá atualizações e novos materiais por 6 meses ou vitalício.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-title">Cérebro em Jogo</p>
+      <p class="footer-text">© 2025 - Todos os direitos reservados</p>
+      <p class="footer-text">Desenvolvendo mentes brilhantes através da educação lúdica</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Toggle
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        
+        // Open clicked one if it wasn't active
+        if (!isActive) {
+          faqItem.classList.add('active');
+        }
+      });
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Purchase Popup System
+    const femaleNames = [
+      "Ana", "Fernanda", "Marina", "Rafaela", "Beatriz", "Larissa", "Juliana", "Camila"
+    ];
+    const maleNames = [
+      "Carlos", "João", "Gustavo", "Thiago", "Pedro", "Lucas", "Matheus", "Rafael"
+    ];
+    const cidades = [
+      "São Paulo", "Rio de Janeiro", "Curitiba", "Salvador", "Fortaleza",
+      "Brasília", "Florianópolis", "Recife", "Porto Alegre", "Belém"
+    ];
+    const produtos = [
+      { nome: "Super Pack", classe: "produto-super" },
+      { nome: "Super Pack", classe: "produto-super" },
+      { nome: "Super Pack", classe: "produto-super" },
+      { nome: "Super Pack", classe: "produto-super" },
+      { nome: "Pack Básico", classe: "produto-basico" }
+    ];
+
+    function randItem(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function mostrarPopup() {
+      const genero = Math.random() < 0.5 ? 'F' : 'M';
+      const nome = genero === 'F' ? randItem(femaleNames) : randItem(maleNames);
+      const cidade = randItem(cidades);
+      const produto = randItem(produtos);
+
+      const frases = [
+        `acabou de comprar o <span class="${produto.classe}">${produto.nome}</span>! 🎉`,
+        `garantiu o <span class="${produto.classe}">${produto.nome}</span> com desconto 😍`,
+        `acabou de adquirir o <span class="${produto.classe}">${produto.nome}</span> 🧠`
+      ];
+      const frase = randItem(frases);
+
+      const popup = document.createElement('div');
+      popup.className = 'popup-compra';
+      popup.innerHTML = `
+        <div class="popup-text">
+          <strong>${nome}</strong> de <strong>${cidade}</strong> ${frase}
+        </div>
+      `;
+
+      document.getElementById('popup-container').appendChild(popup);
+      setTimeout(() => popup.classList.add('show'), 100);
+
+      setTimeout(() => {
+        popup.classList.remove('show');
+        setTimeout(() => popup.remove(), 500);
+      }, 5000);
+    }
+
+    // Show popup every 10-18 seconds
+    setInterval(mostrarPopup, Math.random() * 8000 + 10000);
+  </script>
+</body>
+</html>
