@@ -4,11 +4,10 @@ export default function PricingPlans() {
   const plans = [
     {
       name: 'Pack Básico',
-      price: 'R$ 47',
+      price: 'R$ 10',
       features: [
-        'Acesso a 1.000 atividades',
-        'Livro de colorir bônus',
-        'Suporte por email',
+        'Acesso a 170 atividades',
+        'Acesso Imediato',
         'Atualizações por 6 meses'
       ],
       highlighted: false
