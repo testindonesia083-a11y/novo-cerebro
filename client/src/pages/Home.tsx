@@ -18,10 +18,10 @@ export default function Home() {
       <FeaturesSection />
       <BlueHighlight />
       <BenefitsWithPhone />
+      <PricingPlans />
       <Testimonials />
       <Stats />
       <Guarantee />
-      <PricingPlans />
       <FAQ />
       <Footer />
     </div>
